@@ -18,7 +18,7 @@ http.createServer(function(request, response) {
     var search = queryData.q;
 
     client.get('search/tweets', {q: search , count: '10'}, function(error, tweets){
-        console.log(tweets);
+        console.log(search);
         var json = [];
         for (var i =0; i< tweets.statuses.length ; i++)
         {
