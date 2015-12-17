@@ -15,7 +15,7 @@ http.createServer(function(request, response) {
 
     var url = require('url');
     var queryData = url.parse(request.url, true).query;
-    var search = queryData.q || "Belfast";
+    var search = queryData.q;
 
 
     client.get('search/tweets', {q: search , count: '10'}, function(error, tweets){
