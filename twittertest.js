@@ -3,10 +3,10 @@ var http = require('http');
 var port = process.env.PORT || 1337;
 
 var client = new Twitter({
-    consumer_key: 'V9C6Aok8Tcr1aFzhEzfJRDAfE',
-    consumer_secret: '28N666lpWr2xLYYrdTdSm4ZHnQ1vp96SL0pD8WkhkggVAbFgNw',
-    access_token_key: '45614826-gtsSrBU9jPngkeI0RKFv5h40eJOMTUMukZ86GOZ1k',
-    access_token_secret: 'Z0qhznuqPVSTEEuZiARBTh7sCv1EXm0NXAG6acbVzKAH1'
+    consumer_key: 'UcTeeFPdoyDIj5rv34GafFz9V',
+    consumer_secret: '01fcek9ycgwC8NFkOB6ZBW3ziT4ogNMbPEgGCpDUcIDLGcvCYR',
+    access_token_key: '45614826-OqRDBEhLxVwm5Dg7V7UzvE25QS3XZGIWjZUeo6vu4',
+    access_token_secret: 'pvlIm6K3aJw3KsC3U1TTrsQvjDBDVUb3Eb1Z7D6wsFOuM'
 });
 
 http.createServer(function(request, response) {
