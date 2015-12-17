@@ -13,7 +13,7 @@ http.createServer(function(request, response) {
     response.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin' : '*'  });
     //search for 10 tweets containing lolcats
     client.get('search/tweets', {q: 'Aberdeen' , count: '10'}, function(error, tweets){
-
+        //Logging active
         console.log(tweets);
         var json = [];
         for (var i =0; i< tweets.statuses.length ; i++)
